@@ -38,5 +38,23 @@ class Solution {
 
 Efficient Approach: O(n)
 
+class Solution {
+    public int numIdenticalPairs(int[] nums) {
+      int[] count = new int[100];
+        int result = 0;
+    
+    for(int i = 0; i < nums.length; i++){
+        count[nums[i]-1]++;    
+    }
+    
+    for(int i = 0; i < 100; i++){
+        result += count[i]*(count[i]-1)/2;
+    }
+    
+    
+    return result;
+}
+}
+
 
 
