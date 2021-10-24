@@ -50,3 +50,6 @@ public class Main {
         return -1;
     }
 }
+
+
+time: O(logn)
